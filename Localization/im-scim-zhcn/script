@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-im-switch -s scim
+im-chooser -s scim
