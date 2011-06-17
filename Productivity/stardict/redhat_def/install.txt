@@ -1,4 +1,0 @@
-#pkg install list
-stardict
-stardict-dic-zh_TW                                                                                             
-
