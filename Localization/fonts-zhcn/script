@@ -8,7 +8,7 @@ echo '正在下載 cwttf 中文字型'
 BASE_URL="http://cle.linux.org.tw/fonts/cwttf/rpm"
 mkdir -p ./temp/cwttf
 wget -P temp/cwttf "$BASE_URL/fc3/ttfonts-cwtex-baseline-1.0-1.noarch.rpm"
-wget -P temp/cwttf "$BASE_URL/fc3/ttfonts-cwtex-center-1.0-1.noarch.deb"
+wget -P temp/cwttf "$BASE_URL/fc3/ttfonts-cwtex-center-1.0-1.noarch.rpm"
 
 echo '正在安裝 cwttf 中文字型'
 rpm -i temp/cwttf/*.deb

@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 source $LIB_ROOT/shlib.bash
 
-download_url_prefix='http://nchc.dl.sourceforge.net/sourceforge/stardict/'
-temp_dir='temp/stardict/'
+download_url_prefix='http://www.kcjhs.ptc.edu.tw/eng/resource/stardic星際譯王'
+temp_dir='/tmp/stardict/'
 dic_dir='/usr/share/stardict/dic/'
 
 mkdir -p "$temp_dir"
@@ -15,10 +15,7 @@ dict_list=" \
     stardict-xdict-ce-big5-2.4.2.tar.bz2 \
     stardict-cedict-big5-2.4.2.tar.bz2 \
     stardict-langdao-ec-big5-2.4.2.tar.bz2 \
-    stardict-langdao-ce-big5-2.4.2.tar.bz2 \
-    stardict-21shijishuangxiangcidian-big5-2.4.2.tar.bz2\
-    stardict-lazyworm-ec-big5-2.4.2.tar.bz2 \
-    stardict-lazyworm-ce-big5-2.4.2.tar.bz2"
+    stardict-langdao-ce-big5-2.4.2.tar.bz2" 
 
 for d in $dict_list
 do
