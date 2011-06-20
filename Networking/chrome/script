@@ -1,18 +1,6 @@
 #!/bin/bash
 
-wget https://dl-ssl.google.com/linux/linux_signing_key.pub
-
-rpm --import linux_signing_key.pub
-
-cat > /etc/yum.repos.d/google.repo <<EOF
-[google]
-name=Google - $ARCH_NAME
-baseurl=http://dl.google.com/linux/rpm/stable/$ARCH_NAME
-enabled=1
-gpgcheck=1
-EOF
-
-yum check-update
-
-yum -y install google-chrome-beta
-
+wget https://dl-ssl.google.com/linux/google-repo.setup.sh
+sh google-repo.setup.sh
+yum -y install google-chrome-stable
+yum -y update google-chrome
